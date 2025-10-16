@@ -1,4 +1,5 @@
 import 'package:assessment_task/features/home/view/home_screen.dart';
+import 'package:assessment_task/features/profile/view/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../core/constants/app_colors.dart';
@@ -23,6 +24,7 @@ class BottomNavScreen extends StatelessWidget {
       HomeScreen(),
       PlanScreen(),
       MoodScreen(),
+      ProfileScreen(),
     ];
 
     return Scaffold(
