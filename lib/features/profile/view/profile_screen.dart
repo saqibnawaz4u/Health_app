@@ -10,33 +10,36 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.background,
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
-        child: Column(
-          children: [
-            CustomText(
-              text: "Name: Saqib Nawaz",
-              fontWeight: FontWeight.bold,
-              color: AppColors.white,
-              fontSize: 20.sp,
-            ),
-            SizedBox(height: 20.h),
-            CustomText(
-              text: "Email: nawazsaqib208@gmail.com",
-              fontWeight: FontWeight.bold,
-              color: AppColors.white,
-              fontSize: 20.sp,
-            ),
-            SizedBox(height: 50.h),
-            Center(
-              child: CustomText(
-                text: "Thank You!",
-                fontSize: 30.sp,
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CustomText(
+                text: "Name: Saqib Nawaz",
                 fontWeight: FontWeight.bold,
                 color: AppColors.white,
+                fontSize: 20.sp,
               ),
-            ),
-          ],
+              SizedBox(height: 20.h),
+              CustomText(
+                text: "Email: nawazsaqib208@gmail.com",
+                fontWeight: FontWeight.bold,
+                color: AppColors.white,
+                fontSize: 20.sp,
+              ),
+              SizedBox(height: 50.h),
+              Center(
+                child: CustomText(
+                  text: "Thank You!",
+                  fontSize: 30.sp,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.white,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
